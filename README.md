@@ -19,6 +19,7 @@ import Watermark from "@tntd/react-watermark";
       color: "#ddd",
       rotate: 30,
       fontSize: 16,
+      fontWeight: 300,
       fontFamily: "黑体",
       fontAjust: 1,
       offsetX: 100,
