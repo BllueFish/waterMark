@@ -9,6 +9,7 @@ const defaultOptions = {
     width: "100%",
     height: "auto",
     fontSize: 12,
+    fontWeight: 300,
     fontFamily: "serif",
     fontAjust: 1.2,
     offsetX: 0,
@@ -60,6 +61,7 @@ const Watermark = (props) => {
             rotate = defaultOptions.rotate,
             color = defaultOptions.color,
             fontSize = defaultOptions.fontSize,
+            fontWeight = defaultOptions.fontWeight,
             fontFamily = defaultOptions.fontFamily,
             fontAjust = defaultOptions.fontAjust,
             offsetX = defaultOptions.offsetX,
@@ -91,7 +93,7 @@ const Watermark = (props) => {
 
             canvas.width = Math.max(calcWidth, subCalcWidth);
             canvas.height = calcHeight + subCalcHeight;
-            ctx.font = `${fontSize}px ${fontFamily}`;
+            ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
             ctx.rotate((-`${rotate}` * Math.PI) / 180); // 逆时针方向
             ctx.fillStyle = color;
             ctx.fillText(`${text}`, textAlign.x, textAlign.y);

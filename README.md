@@ -44,6 +44,7 @@ const defaultOptions = {
     width: "100%",
     height: "auto",
     fontSize: 12,
+    fontWeight: 300,
     fontFamily: "黑体",
     fontAjust: 1.2,
     offsetX: 0,
